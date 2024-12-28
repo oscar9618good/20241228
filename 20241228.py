@@ -1,2 +1,2 @@
 # Github Action
-print("hi")
+print("hello world")
