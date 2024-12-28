@@ -1,0 +1,26 @@
+name: Run Python           #定義這個 workflow 的名稱 #整體是key: value的結構
+on:                        #當有新的 push 發生時，觸發這個 workflow
+    push:
+
+jobs:                      #jobs是 workflow 的執行單位
+  build:                   #定義一個名為 "build" 的 job
+    name: run py1          #這個 job 的顯示名稱
+    runs-on: ubuntu-latest #指定在最新的 Ubuntu Linux 上執行
+    steps:                 #定義這個 job 的步驟 #job中要執行的每一步
+      - uses: actions/checkout@v2  #使用GitHub提供的checkout action來檢出程式碼  #用checkout第二版去跑
+      - name: run python   #定義這一步的名稱
+        run: |             #指定要執行的命令 #執行名為 20241228.py的Python檔案
+            python3 20241228.py  
+
+
+
+    # - name: Set up Python
+    #   uses: actions/setup-python@v2
+    #   with:
+    #     python-version: '3.x'
+    # - name: Install dependencies
+    #   run: |
+    #     python -m pip install --upgrade pip
+    #     pip install -r requirements.txt
+    # - name: Run Python script
+    #   run: python your_script.py
