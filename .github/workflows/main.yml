@@ -12,7 +12,7 @@ jobs:                      #jobs是 workflow 的執行單位
       - uses: actions/checkout@v2  #使用GitHub提供的checkout action來檢出程式碼  #用checkout第二版去跑
       - name: run python   #定義這一步的名稱
         run: |             #指定要執行的命令 #執行名為 20241228.py的Python檔案
-            python3 20241228.py  
+            python3 test_mail.py  
 
 
 
