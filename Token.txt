@@ -1,1 +1,2 @@
-passwordToken = "yvdx hydr ivub tahx"
+https://myaccount.google.com/apppasswords
+passwordToken = "tpry awnm qgsh bmes"

@@ -1,8 +1,8 @@
 name: Run Python           #定義這個 workflow 的名稱 #整體是key: value的結構
 on:                        #定義workflow的觸發條件
     push:                  #當有新的 push 發生時，觸發這個 workflow
-    schedule:
-    - cron: 40 8 * * *     #UTC+0為基準，故台灣時間16:40就執行  #https://crontab.guru/
+    #schedule:
+    #- cron: 40 8 * * *     #UTC+0為基準，故台灣時間16:40就執行  #https://crontab.guru/
 
 jobs:                      #jobs是 workflow 的執行單位
   build:                   #定義一個名為 "build" 的 job

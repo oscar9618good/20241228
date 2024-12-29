@@ -1,6 +1,8 @@
 # import smtplib    #引用email寄送套組
 # import ssl        #引用加密套組
-import smtplib, ssl #兩個套組合併成一行, merge 1.2行
+# import smtplib, ssl #兩個套組合併成一行, merge 1.2行
+
+# from email.mime.text import MIMEText  #大駝峰命名法 #class
 
     # h = Header("Test send mail", "utf-8")     #UTF-8全語系文字
     # a = h.encode()
